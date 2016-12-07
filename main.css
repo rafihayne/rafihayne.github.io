@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/* fix silly spacing issues */
+* {
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+body{
+  color: black;
+  font-size: 16px;
+/*  line-height: 1.5;*/
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.wrapper {
+  width: 660px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-header { 
+  padding: 2.5rem 0;
+}
+
+.header-name {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 3px;
+  }
+
+.avatar {
+    width: 105px;
+    max-width: 100%;
+    border-radius: 50%;
+
+    vertical-align: center;
+    float: right;
+  }
+
+.header-contact {
+    padding-top: 4px;
+    font-size: 14px;
+}
+
+.header-contact  dt {
+    float: left;
+    text-align: left;
+    font-weight: 700;
+  }
+.header-contact  dt:after {
+    content: ":";
+  }
+.header-contact  dd {
+    padding: 0 0 0 5rem;
+    color: #555;
+  }
+
+nav {
+    padding: 0 0 8px 0;
+    font-size: 1rem;
+    font-weight: 900;
+    border-bottom: 1px solid #e2e2e2;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+a#current {
+    color: black;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-section {
+    padding: 2.5rem 0;
+}
+
+.content-section p {
+    padding: .5rem 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.publications li {
+    list-style-type: none;
+}
+
+#pub-title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#pub-authors {
+    font-style: italic;
+}
+
+h2 {
+    margin: 1.5rem 0;
+    font-weight: 300;
+}
+
+.publications{
+    margin: 0.75rem 0;
+}
+
+  .item { margin-bottom: 2rem; }
+
+  .item-title {
+    @include sans_bold;
+    margin: 0 0 .75rem;
+    font-size: 1.5rem;
+    letter-spacing: -.05rem;
+    line-height: 1;
+  }
+
+  .item-details {
+    font-size: 1.125rem;
+    margin: 0 0 .75rem;
+    line-height: 1;
+    color: #555;
+  }
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
